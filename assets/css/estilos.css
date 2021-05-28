@@ -242,6 +242,16 @@ p, a {font-weight: 400;}
   height: 100%;
   width: 100%;
 }
+.banner-body{
+  color: #000;
+}
+.banner-heading{
+  color: #000;
+}
+.banner-content h3{
+  color: #000;
+}
+
 .related-content {
   border-radius: 20px;
   cursor: pointer;
