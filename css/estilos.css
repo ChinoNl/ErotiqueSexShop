@@ -1,0 +1,339 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&family=Satisfy&display=swap');
+
+html {font-family: 'Open Sans', sans-serif;}
+/* Typography */
+p, a {font-weight: 400;}
+.h2 {font-size: 40px;}
+.h3 {font-size: 28px;}
+.light-300 {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 300;
+}
+.regular-400 {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400;
+}
+.semi-bold-600 {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 600;
+}
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom:  5px solid #6266ea;
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+/* Main Nav */
+#main_nav .nav-item .nav-link:hover {color: #fff;}
+
+.logo{
+  width: 300px;
+  height: 100px;
+  background-image: url(../img/Erotique/Logo\ erotique.jpg);
+  background-size: cover;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+}
+
+.nav-item a{
+  font-size: 22px;
+
+}
+.nav-item a:hover{
+  background-color: #503660;
+}
+
+/* Home*/ 
+#index_banner {
+  background-image: url('../img/Erotique/Lenceria.jpg');
+  background-size: cover;
+  height: 100%;
+  min-height: 60vh;
+  width: 100%;
+ 
+}
+
+
+#index_banner .carousel-item {
+  min-height: 60vh;
+  text-align: center;
+  
+}
+
+
+
+.texto h1{
+  font-family: 'Playfair Display SC', serif !important; 
+}
+
+
+
+
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  color: #503660 !important;
+  text-decoration: none;
+  font-size: 4em;
+}
+#index_banner .carousel-inner {
+  height: 80vh;
+}
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  background-color: #503660 !important;
+
+}
+
+.banner-body{
+  color: #fff;
+  font-size: 25px;
+}
+
+.banner-button{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  border-color: #503660;
+}
+
+.banner-button:hover{
+  background-color: #503660;
+
+}
+
+
+
+.service-wrapper .service-footer {
+  max-width: 720px;
+}
+
+.service-tag{
+  background-color: #242324d1;
+}
+
+.service-tag a :hover{
+  background-color: #503660;
+}
+.service-work.card {
+  border-radius: 10px !important;
+  cursor: pointer;
+}
+.service-work .service-work-vertical {
+	background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  opacity: 0%;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+  opacity: 100%;
+}
+.service-work .service-work-vertical:hover * {
+  color: #000;
+  border-color: #000;
+  transition: .5s;
+}
+.recent-work.card{
+  border-radius: 10px !important;
+}
+.recent-work .recent-work-vertical {
+	background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(94,65,112,1) 32%, rgba(80,54,96,1) 52%);
+  background-size: 300% 300%;
+  background-position: 0% 100%;
+  transition: .5s;
+  cursor: pointer;
+  opacity: 0%;
+}
+
+
+
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+  opacity: 80%;
+ 
+}
+
+
+.recent-work .recent-work-vertical:hover div.recent-work-content {  
+  top: 60%;
+  margin-top: 0;
+  position: absolute;
+  
+}
+
+
+.recent-work .recent-work-vertical:hover * {
+  color: white;
+  transition: .5s;
+}
+
+/* About */
+#work_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center; background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.progress {
+  height: 8px;
+}
+.objective-icon {
+  border-radius: 13px;
+  width: 8rem;
+}
+.partner-wap {
+  background-color: #7276ec;
+  transition: 1s;
+  cursor: pointer;
+}
+.partner-wap:hover {
+  background-color: #b1b3f5;
+}
+.why-us {
+  background: rgb(239,239,253);
+  background: -moz-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: -webkit-linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  background: linear-gradient(0deg, rgba(239,239,253,1) 50%, rgba(255,255,255,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#efeffd",endColorstr="#ffffff",GradientType=1);
+}
+.team-member-img {
+  transition-duration: 0.15s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+
+/* Work */
+/* Singel Work */
+#work_single_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Pricing */
+.pricing-list {
+  margin-bottom: 1px;
+}
+.pricing-table {
+  max-width: 350px;
+  margin: auto;
+}
+.pricing-table,
+.pricing-horizontal {
+  border-radius: 15px !important;
+}
+/* Contact */
+#floatingtextarea {
+  height: 150px
+}
+/* Footer */
+footer{
+  background-color: #242324d1 ;
+}
+footer a.text-light:hover {
+  
+  color: #bfbfbf !important;
+  transition-duration: 0.15s;
+}
+
+
+
+
+ /*----------------------------------------About------------------------------*/
+
+ .ban-about{
+   margin-top: 80px;
+ }
+
+ .about-img{
+   height: 450px;
+   margin-left: 80px;
+ }
+
+ /*----------------------------------------Productos------------------------------*/
+
+
+
+
+
+
+
+
+.margin-principal{
+  margin-top: 130px;
+}
+
+.icon-ig{
+  font-size: 80px;
+  
+}
+
+.contact-info li{
+  margin-top: 5px;
+}
+
+.contact-container{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.card-contact{
+  margin: 20px;
+}
+
+
+
+
+.boton-producto:hover{
+  background-color: #503660;
+  
+}
+
+
+
+.filter-btn-activo{
+  background-color: #503660 !important;
+  border-radius: 30%;
+  color: #fff;
+}
+
+
+
